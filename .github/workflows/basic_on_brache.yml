@@ -1,7 +1,10 @@
 name: Github Action - push (basic)
 run-name: Executando - ${{github.event_name}}
 
-on: [push]
+on:
+  push:
+    branches:
+     - developer
 jobs:
   on-push:
    runs-on: ubuntu-latest

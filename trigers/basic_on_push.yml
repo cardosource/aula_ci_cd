@@ -1,0 +1,11 @@
+name: Github Action - push (basic)
+run-name: Executando - ${{github.event_name}}
+
+on: [push]
+
+jobs:
+  on-push:
+   runs-on: ubuntu-latest
+   steps:
+     -  name: Comentario
+        run: echo "viva linux!"
