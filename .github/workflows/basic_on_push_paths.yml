@@ -1,4 +1,5 @@
 name: Github Action - paths (basic)
+
 run-name: Executando - ${{github.event_name}}
 
 on:
