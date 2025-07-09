@@ -4,7 +4,6 @@ run-name: Executando - ${{github.event_name}}
 on:
   push:
     branches-ignore:
-     - main
      - developer
      - teste
      - 'release/**'
