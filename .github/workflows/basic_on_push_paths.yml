@@ -2,13 +2,15 @@ name: Github Action - paths  (basic)
 run-name: Executando - ${{github.event_name}}
 
 on:
+  branchs:
+   - main
+   - developer
   push:
     paths:
      - '**.py'
-     - '**.c'
 jobs:
   on-push:
    runs-on: ubuntu-latest
    steps:
      -  name: Comentario
-        run: echo "arquivos python e C"
+        run: echo "arquivos python e C, <main-brach>"
