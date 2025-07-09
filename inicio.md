@@ -1,4 +1,4 @@
 - basic push
 - basic branch
 - basic ignore branch <developer>	
-- basic paths <up>.
+- basic paths
