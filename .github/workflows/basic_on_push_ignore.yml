@@ -1,4 +1,4 @@
-name: Github Action - push (basic)
+name: Github Action - ignore  (basic)
 run-name: Executando - ${{github.event_name}}
 
 on:
