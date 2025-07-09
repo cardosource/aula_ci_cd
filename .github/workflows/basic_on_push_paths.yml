@@ -3,13 +3,11 @@ run-name: Executando - ${{github.event_name}}
 
 on:
   push:
-    branches-ignore:
-     - main
-     - teste
-     - 'release/**'
+    paths:
+     - '**.py'
 jobs:
   on-push:
    runs-on: ubuntu-latest
    steps:
      -  name: Comentario
-        run: echo "usando branch developer!!"
+        run: echo "arquivos python"
