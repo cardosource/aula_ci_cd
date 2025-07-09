@@ -1,10 +1,11 @@
-name: Github Action - ignore  (basic)
+name: Github Action - paths  (basic)
 run-name: Executando - ${{github.event_name}}
 
 on:
   push:
     paths:
      - '**.py'
+     - '**.c'
 jobs:
   on-push:
    runs-on: ubuntu-latest
