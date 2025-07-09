@@ -4,7 +4,10 @@ run-name: Executando - ${{github.event_name}}
 on:
   push:
     branches:
+     - main
      - developer
+     - teste
+     - 'release/**'
 jobs:
   on-push:
    runs-on: ubuntu-latest
