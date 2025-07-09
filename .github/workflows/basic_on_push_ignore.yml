@@ -3,10 +3,8 @@ run-name: Executando - ${{github.event_name}}
 
 on:
   push:
-    branches-ignore:
-     - main
-     - teste
-     - 'release/**'
+    paths:
+     - "**.py"
 jobs:
   on-push:
    runs-on: ubuntu-latest
