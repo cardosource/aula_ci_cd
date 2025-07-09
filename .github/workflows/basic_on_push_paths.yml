@@ -2,12 +2,12 @@ name: Github Action - paths  (basic)
 run-name: Executando - ${{github.event_name}}
 
 on:
-  branches:
-   - main
-   - developer
   push:
-    paths:
-     - '**.py'
+    branches:
+      - main
+      - developer
+     paths:
+       - '**.py'
 jobs:
   on-push:
    runs-on: ubuntu-latest
