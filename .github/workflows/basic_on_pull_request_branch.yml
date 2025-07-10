@@ -1,0 +1,16 @@
+name: Github Action - pull request (basic)
+
+run-name: Executando - ${{github.event_name}}
+
+on:
+  pull_request:  
+    branches:
+      - main
+  
+jobs:
+  on_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+            echo "apenas na branch main"
