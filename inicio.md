@@ -2,4 +2,4 @@
 - basic branch
 - basic ignore branch <developer>	
 - basic paths
-- basic pull request usando branch especifica
+- basic pull request usando branch especifica <up>
