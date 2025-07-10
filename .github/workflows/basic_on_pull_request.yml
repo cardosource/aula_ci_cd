@@ -1,14 +1,8 @@
-name: Github Action - paths (basic)
+name: Github Action - pull request (basic)
 
 run-name: Executando - ${{github.event_name}}
 
-on:
-  push:
-    branches:
-      - main
-      - developer
-    paths:
-      - '**.py'
+on: [pull_request]
 
 jobs:
   on_push:
