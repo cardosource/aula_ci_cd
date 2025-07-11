@@ -1,0 +1,12 @@
+name: Github Action - Configuração  de variavel de repositorio
+run-name: Executando - Variavel
+
+on: [push,workflow_dispatch]
+
+jobs:
+  on-push:
+    runs-on: ubuntu:latest
+    setups:
+      - name: iniciado
+        run |
+         echo "inicado a variavel" ${{vars.cardosource}}
