@@ -1,5 +1,5 @@
-name: Github Action - Configuração Secrets
-run-name: Executando - Secrets
+name: Github Action - Variaveis de ambiente
+run-name: Executando - Variavel de Ambiente
 
 on: [push,workflow_dispatch]
 env:
