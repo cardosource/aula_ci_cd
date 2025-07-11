@@ -2,11 +2,12 @@ name: Github Action - Configuração Secrets
 run-name: Executando - Secrets
 
 on: [push,workflow_dispatch]
-
+env:
+  variavel: "conteudo aqui"
 jobs:
   on-push:
     runs-on: ubuntu-latest
     steps:
       - name: iniciado
         run: |
-         echo "inicado a variavel  ${{ secrets.minha_senha }}"
+         echo "$variavel "
