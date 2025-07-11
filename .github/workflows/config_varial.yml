@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: iniciado
         run: |
-         echo "inicado a variavel  ${{vars.testeinicial}}"
+         echo "inicado a variavel  ${{ vars.var_test }}"
