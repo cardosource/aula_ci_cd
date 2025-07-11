@@ -9,4 +9,4 @@ jobs:
     setups:
       - name: iniciado
         run |
-         echo "inicado a variavel" ${{vars.cardosource}}
+         echo "inicado a variavel " ${{vars.cardosource}}
