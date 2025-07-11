@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu:latest
     setups:
       - name: iniciado
-        run |
+        run: |
          echo "inicado a variavel " ${{vars.cardosource}}
