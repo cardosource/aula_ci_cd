@@ -14,9 +14,8 @@ jobs:
       echo "iniciado"
 
 
-on_workflow_dipatch_only:
+on_workflow_dispatch_only:
  if: ${{github.event_name == 'workflow_dispatch'}}
-
  runs-on: ubuntu-latest
  steps:
   - name: comentario...
