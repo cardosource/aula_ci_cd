@@ -1,0 +1,14 @@
+name: Trigger - iniciando
+run-name: A ser iniciado
+
+on: [push, workflow_dispatch]
+
+jobs:
+ on-push:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Terceiro Iniciado
+     run: |
+       echo "Iniciando"
+
+
