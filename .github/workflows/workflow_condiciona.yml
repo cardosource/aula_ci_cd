@@ -1,23 +1,22 @@
 name: Workflow condicionais
- 
-run-name:  condicionais ${{github.event_name}}
-on: [push, workflow_dispatch] 
 
+run-name: condicionais ${{github.event_name}}
+
+on: [push, workflow_dispatch]
 
 jobs:
- on-push-only:
-  if: ${{github.event_name == 'push'}}
-  runs-on: ubuntu-latest
-  steps:
-   - name: inciando
-     run: |
-      echo "iniciado"
+  on-push-only:
+    if: ${{github.event_name == 'push'}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: inciando
+        run: |
+          echo "iniciado"
 
-
-on_workflow_dispatch_only:
- if: ${{github.event_name == 'workflow_dispatch'}}
- runs-on: ubuntu-latest
- steps:
-  - name: comentario...
-    run: |
-     echo "...."
+  on-workflow-dispatch-only:
+    if: ${{github.event_name == 'workflow_dispatch'}}
+    runs-on: ubuntu-latest
+    steps:
+      - name: comentario...
+        run: |
+          echo "...."
