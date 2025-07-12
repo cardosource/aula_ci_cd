@@ -1,0 +1,16 @@
+name: Github Action - Matrix strategy
+
+run-name: Usando Matrix
+
+on: [push, workflow_dispatch]
+jobs:
+ matrix_job:
+  runs-on: ubuntu-latest
+  strategy:
+    matrix:
+      navegador: [navegador1,navegador2,navegador3]
+    fail-fast: false
+  steps:
+   - name: strategy matrix
+     run: |
+          echo ${{matrix.navegador}}
