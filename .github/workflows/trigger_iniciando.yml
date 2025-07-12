@@ -3,7 +3,7 @@ run-name: chamando 1,2,3
 
 on:
  workflow_run:
-  workflows: [ inciando primeiro, iniciando segundo, iniciando terceiro ]
+  workflows: [inciando primeiro, iniciando segundo, iniciando terceiro]
 
 jobs:
  on-push:

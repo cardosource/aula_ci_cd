@@ -2,6 +2,7 @@ nane: Trigger Dois
 run-name: executando segundo
 
 on: [push,workflow_dispatch]
+
 jobs:
  on-push:
   runs-on: ubuntu-latest

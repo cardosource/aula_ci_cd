@@ -2,6 +2,7 @@ nane: Trigger Terceiro
 run-name: executando  terceiro
 
 on: [push,workflow_dispatch]
+
 jobs:
  on-push:
   runs-on: ubuntu-latest
