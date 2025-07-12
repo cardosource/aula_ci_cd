@@ -10,5 +10,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: chamando trigers 1,2,3
-    run |
-     echo "iniciando 1,2,3"
+     run: |
+      echo "iniciando 1,2,3"
