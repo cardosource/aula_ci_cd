@@ -1,5 +1,4 @@
-
-name: Trigger Segundo
+name: Trigger - 2
 run-name: executando segundo
 
 on: [push, workflow_dispatch]
