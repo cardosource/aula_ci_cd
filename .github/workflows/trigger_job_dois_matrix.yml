@@ -1,7 +1,9 @@
 name: Trigger - 2 
 run-name: executando segundo
 
-on: [push, workflow_dispatch]
+on: 
+ workflow_dispatch:
+ push:
   paths:
    - 'trigger_job_dois_matrix.yml'
 

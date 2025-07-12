@@ -1,9 +1,11 @@
 name: Trigger - 3 
 run-name: executando terceiro
 
-on: [push,workflow_dispatch]
-  paths:
-   - 'trigger_job_tres_matrix.yml'
+on: 
+  workflow_dispatch:
+  push:
+   paths:
+    - 'trigger_job_tres_matrix.yml'
 
 jobs:
  on-push:

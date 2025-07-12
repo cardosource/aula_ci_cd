@@ -1,9 +1,11 @@
 name: Trigger 1 
 run-name: executando primerio
 
-on: [push, workflow_dispatch]
-  paths:
-   - 'trigger_job_um_matrix.yml'
+on:
+  workflow_dispatch:
+  push:
+   paths:
+    - 'trigger_job_um_matrix.yml'
 
 jobs:
  on-push:
