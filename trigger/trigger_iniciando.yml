@@ -1,0 +1,19 @@
+name: Main Workflow 
+run-name: chamando 1,2,3
+
+on:
+ workflow_run:
+  workflows: [A ser iniciado]
+  #types: [requested]
+  #types: [in_progress]
+  types: [requested,completed,in_progress]
+ 
+
+
+jobs:
+ on-push:
+  runs-on: ubuntu-latest
+  steps:
+   - name: inciando
+     run: |
+      echo "iniciado"
