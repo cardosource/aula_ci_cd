@@ -1,0 +1,14 @@
+name: Trigger Terceiro
+run-name: executando terceiro
+
+on: [push,workflow_dispatch]
+  paths:
+   - 'trigger_job_tres_matrix.yml'
+
+jobs:
+ on-push:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Terceiro Iniciado
+     run: |
+       echo "Trabalhando com o terceiro!!"

@@ -1,0 +1,14 @@
+name: Trigger Um
+run-name: executando primerio
+
+on: [push, workflow_dispatch]
+  paths:
+   - 'trigger_job_um_matrix.yml'
+
+jobs:
+ on-push:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Primeiro Iniciado
+     run: |
+       echo "Trabalhando primeiro"
