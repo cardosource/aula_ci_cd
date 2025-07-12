@@ -7,7 +7,7 @@ jobs:
  on-push:
   runs-on: ubuntu-latest
   steps:
-   - name: Terceiro Iniciado
+   - name:  Iniciado
      run: |
        echo "Iniciando"
 
