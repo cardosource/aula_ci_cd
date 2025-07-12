@@ -1,4 +1,4 @@
-name: Trigger - iniciando
+name: Trigger - iniciando 
 run-name: A ser iniciado
 
 on: [push, workflow_dispatch]
