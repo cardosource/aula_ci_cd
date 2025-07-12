@@ -5,8 +5,8 @@ on: [push, workflow_dispatch]
 
 
 jobs:
- if: ${{github.event_name == 'push'}}
  on-push-only:
+  if: ${{github.event_name == 'push'}}
   runs-on: ubuntu-latest
   steps:
    - name: inciando
