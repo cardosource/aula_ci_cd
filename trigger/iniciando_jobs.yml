@@ -1,0 +1,14 @@
+name: Iniciando jobs
+run-name: Iniciando...
+
+on:
+  workflow_run:
+    workflows: [executando primeiro,executando segundo,executando terceiro]
+
+jobs:
+ on_push:
+   runs-on: ubuntu-latest
+   steps:
+     - name: padrao
+       run: |
+           echo " inciando eles"
