@@ -1,4 +1,4 @@
-nane: Trigger Dois
+name: Trigger Dois
 run-name: executando segundo
 
 on: [push,workflow_dispatch]

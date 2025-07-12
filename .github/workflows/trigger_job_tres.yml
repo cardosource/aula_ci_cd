@@ -1,4 +1,4 @@
-nane: Trigger Terceiro
+name: Trigger Terceiro
 run-name: executando  terceiro
 
 on: [push,workflow_dispatch]

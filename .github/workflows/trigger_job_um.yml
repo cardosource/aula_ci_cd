@@ -1,4 +1,4 @@
-nane: Trigger Um
+name: Trigger Um
 run-name: executando primerio
 
 on: [push,workflow_dispatch]
