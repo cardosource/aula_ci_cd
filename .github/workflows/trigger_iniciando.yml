@@ -1,14 +1,15 @@
 name: iniciando
 run-name: chamando 1,2,3
 
-on:
- workflow_run:
-  workflows: [inciando primeiro, iniciando segundo, iniciando terceiro]
+on: [push,  workflow_dispatch]
 
 jobs:
  on-push:
   runs-on: ubuntu-latest
+  strategy:
+   matrix:
+    job: ['um','dois','tres']
   steps:
-   - name: chamando trigers 1,2,3
+   - name: chamando trigers ${{matrix.job}}
      run: |
       echo "iniciando 1,2,3"

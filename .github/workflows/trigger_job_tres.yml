@@ -1,7 +1,11 @@
 name: Trigger Terceiro
-run-name: executando  terceiro
+run-name: executando terceiro
 
-on: [push,workflow_dispatch]
+on:
+ workflow_dispatch:
+ push:
+  paths:
+   - 'trigger_job_tres.yml'
 
 jobs:
  on-push:
@@ -9,4 +13,4 @@ jobs:
   steps:
    - name: Terceiro Iniciado
      run: |
-        echo "Trabalha terceiro"
+       echo "Trabalhando com o terceiro!!"

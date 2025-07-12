@@ -1,7 +1,11 @@
 name: Trigger Um
 run-name: executando primerio
 
-on: [push,workflow_dispatch]
+on:
+ workflow_dispatch:
+ push:
+  paths:
+   - 'trigger_job_um.yml'
 
 jobs:
  on-push:

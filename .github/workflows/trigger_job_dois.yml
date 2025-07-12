@@ -1,12 +1,16 @@
-name: Trigger Dois
+name: Trigger Segundo
 run-name: executando segundo
 
-on: [push,workflow_dispatch]
+on:
+ workflow_dispatch:
+ push:
+  paths:
+   - 'trigger_job_dois.yml'
 
 jobs:
  on-push:
   runs-on: ubuntu-latest
   steps:
-   - name: Segundo Iniciado
+   - name: Segundo,,
      run: |
-        echo "Trabalha segundo"
+       echo "Trabalhando com o segundo"
