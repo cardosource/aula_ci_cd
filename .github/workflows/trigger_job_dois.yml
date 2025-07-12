@@ -3,9 +3,9 @@ run-name: executando segundo
 
 on: [push,workflow_dispatch]
 jobs:
-  on-push:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Segundo Iniciado
-       run: |
-         echo "Trabalha segundo"
+ on-push:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Segundo Iniciado
+     run: |
+        echo "Trabalha segundo"

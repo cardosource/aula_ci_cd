@@ -1,0 +1,14 @@
+name: iniciando
+run-name: chamando 1,2,3
+
+on:
+ workflow_run:
+  workflows: [ inciando primeiro, iniciando segundo, iniciando terceiro ]
+
+jobs:
+ on-push:
+  runs-on: ubuntu-latest
+  steps:
+   - name: chamando trigers 1,2,3
+    run |
+     echo "iniciando 1,2,3"
