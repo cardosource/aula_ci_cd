@@ -1,0 +1,32 @@
+name: Github Action  Jobs
+
+run-name: Usando Jobs
+
+on: [push, workflow_dispatch]
+jobs:
+  test_unit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: usando o workFlow run
+        run: |
+            echo "Inicial"
+
+
+  test_api:
+    needs: test_unit
+    on-push:
+      runs-on: ubuntu-latest
+      steps:
+        - name: usando o workFlow run
+          run: |
+            echo "Teste Api"
+
+
+  test_erro:
+    needs: [test_unit,test_api]
+    on-push:
+      runs-on: ubuntu-latest
+      steps:
+        - name: usando o workFlow run
+          run: |
+            echo "Teste erro"
